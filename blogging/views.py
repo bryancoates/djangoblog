@@ -1,6 +1,7 @@
 from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.template import loader
-from blogging.models import Post
+from django.contrib.auth.models import User, Group
+from blogging.models import Post, Category
 from django.shortcuts import render
 
 def stub_view(request, *args, **kwargs):
